@@ -6,5 +6,3 @@ getWB = function()
 }
 
 
-let WB = getWB();
-console.log(WB);
