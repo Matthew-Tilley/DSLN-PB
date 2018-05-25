@@ -11,7 +11,14 @@ getWB = function()
 
 
 
-for (let i=0; i<=5; i++)
-    {
-          
-    }
+fiveWB = function()
+{
+    for (let i=0; i<5; i++)
+        {
+            let temp = getWB();
+            numbers.push(temp);
+            console.log(numbers);
+        }
+}
+
+fiveWB();
