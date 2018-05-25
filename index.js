@@ -9,5 +9,6 @@ getWB = function()
 
 for (let i=0; i<=5; i++)
     {
-        console.log("LKJADS");
+        console.log("LKJADS" + i);
+        
     }
