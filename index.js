@@ -1,3 +1,7 @@
+let numbers = [];
+
+
+
 getWB = function()
 {
     let WB = Math.ceil(Math.random() * 69);
@@ -9,6 +13,5 @@ getWB = function()
 
 for (let i=0; i<=5; i++)
     {
-        
-        
+          
     }
