@@ -1,6 +1,6 @@
 getWB = function()
 {
-    let WB = Math.random() * 69;
+    let WB = Math.ceil(Math.random() * 69);
     
     return WB;
 }
