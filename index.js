@@ -15,10 +15,25 @@ fiveWB = function()
 {
     for (let i=0; i<5; i++)
         {
-            let temp = getWB();
-            numbers.push(temp);
-            console.log(numbers);
+            getWB();
+            
+            if (numbers.indexOf(getWB()) !== -1 )
+                {
+                    getWB();
+                }
+            
+            else
+            {
+                numbers.push(getWB());
+            }
         }
+    
+    numbers.sort(function(a,b)
+    {
+        return a - b;    
+    })
+    
+    console.log(numbers);
 }
 
 fiveWB();
