@@ -5,3 +5,12 @@ body
     
     background-color:           darkblue;
 }
+
+
+#LOC01
+{
+    display:                    flex;
+    justify-content:            space-between;
+    align-items:                center;
+    
+}
