@@ -30,6 +30,7 @@ body
 .DBOX-T-01
 {
     width:                      12vw;
+    align-items:                center;
     
     font-size:                  5vh;
 }
