@@ -1,21 +1,12 @@
 let numbers = [];
 
 
-
+//FUNCTION GETS VALUE FOR A SINGLE WHITE BALL
 getWB = function()
 {
     WB = Math.ceil(Math.random() * 69);
     
     return WB;
-}
-
-
-getPB = function()
-{
-    PB = Math.ceil(Math.random() * 26);
-    
-    numbers.push(PB);
-    console.log(numbers);
 }
 
 
@@ -43,13 +34,29 @@ fiveWB = function()
     });
     
     
+    getPB();
+    
+}
+
+
+
+
+//GETS VALUE FOR A SINGLE POWERBALL
+getPB = function()
+{
+    PB = Math.ceil(Math.random() * 26);
+    
+    numbers.push(PB);
     console.log(numbers);
     
 }
 
 
-fiveWB();
-getPB();
+
+
+
+
+
 
 
 
