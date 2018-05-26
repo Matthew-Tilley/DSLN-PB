@@ -4,36 +4,52 @@ let numbers = [];
 
 getWB = function()
 {
-    let WB = Math.ceil(Math.random() * 69);
+    WB = Math.ceil(Math.random() * 69);
     
     return WB;
 }
 
 
+getPB = function()
+{
+    PB = Math.ceil(Math.random() * 26);
+    
+    numbers.push(PB);
+    console.log(numbers);
+}
 
+
+//GETS VALUES FOR EACH OF THE FIVE WHITE BALLS
 fiveWB = function()
 {
     for (let i=0; i<5; i++)
         {
             getWB();
             
-            if (numbers.indexOf(getWB()) !== -1 )
+            //CHECKS FOR DUPLICATES AFTER DRAWING A NUMBER
+            if (numbers.indexOf(WB) !== -1)
                 {
                     getWB();
                 }
             
-            else
-            {
-                numbers.push(getWB());
-            }
+            numbers.push(WB);
         }
     
+
+    //SORTS ARRAY AFTER ALL NUMBERS SELECTED
     numbers.sort(function(a,b)
     {
         return a - b;    
-    })
+    });
+    
     
     console.log(numbers);
+    
 }
 
+
 fiveWB();
+getPB();
+
+
+
