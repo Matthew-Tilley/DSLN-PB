@@ -9,6 +9,15 @@ getWB = function()
     return WB;
 }
 
+//GETS VALUE FOR A SINGLE POWERBALL
+getPB = function()
+{
+    PB = Math.ceil(Math.random() * 26);
+    
+    numbers.push(PB);
+    confirm(numbers);
+}
+
 
 //GETS VALUES FOR EACH OF THE FIVE WHITE BALLS
 fiveWB = function()
@@ -41,15 +50,7 @@ fiveWB = function()
 
 
 
-//GETS VALUE FOR A SINGLE POWERBALL
-getPB = function()
-{
-    PB = Math.ceil(Math.random() * 26);
-    
-    numbers.push(PB);
-    console.log(numbers);
-    
-}
+
 
 
 
